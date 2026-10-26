@@ -6,17 +6,31 @@
 <link rel="stylesheet" href="styles.css"></head>
 <body>
 <header class="site-header"><div class="wrap bar">
-<a class="logo" href="index.html">YN<span>.</span></a>
+<a class="logo" href="#home">YN<span>.</span></a>
 <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
-<nav id="nav" class="nav"><a href="index.html" class="active" aria-current="page">Home</a><a href="about.html">About Me</a><a href="certificates.html">Certificates</a><a href="services.html">Tools</a><a href="project.html">Projects</a><a href="contact.html">Contact</a></nav></div></header>
-<main><section class="hero"><div class="wrap hero-grid"><div>
+<nav id="nav" class="nav"><a href="#home" class="active">Home</a><a href="#about">About Me</a><a href="#certificates">Certificates</a><a href="#tools">Tools</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav></div></header>
+<main><section class="hero" id="home"><div class="wrap hero-grid"><div>
 <p class="hi">Hi I am</p><h1>Your Full Name</h1><h2>Your Role | Your Specialty</h2>
 <p class="lead">Write two or three sentences here about what you do, who you help and what makes your work reliable. Replace this placeholder with your own words.</p>
-<a class="btn" href="contact.html">Hire Me</a></div>
-<div class="avatar" role="img" aria-label="Profile photo placeholder"><span>YN</span></div></div></section></main>
+<a class="btn" href="#contact">Hire Me</a>
+<div class="quick" aria-label="Quick links"><span>Quick links:</span>
+<a href="tel:+000000000000">Call</a>
+<a href="https://wa.me/000000000000" target="_blank" rel="noopener">WhatsApp</a>
+<a href="mailto:you@example.com">Email</a>
+<a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
+<a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+<a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></div></div>
+<div class="avatar" role="img" aria-label="Profile photo placeholder"><span>YN</span></div></div></section>
+<div id="about"><section class="page-head"><div class="wrap"><h1>About Me</h1><p>A short line about who you are.</p></div></section><section class="section"><div class="wrap two"><div><h2>My Story</h2><p>Replace with your background, experience and what drives your work.</p><p>Add a second paragraph about how you work with clients or teams.</p></div>
+<div><h2>Skills</h2><ul class="chips"><li>Skill one</li><li>Skill two</li><li>Skill three</li><li>Skill four</li><li>Skill five</li><li>Skill six</li></ul></div></div></section></div>
+<div id="certificates"><section class="page-head"><div class="wrap"><h1>Certificates</h1><p>Courses and credentials you have completed.</p></div></section><section class="section"><div class="wrap grid"><article class="card "><div class="thumb"></div><h3>Certificate title 1</h3><p>Issuer name · Year</p></article><article class="card "><div class="thumb"></div><h3>Certificate title 2</h3><p>Issuer name · Year</p></article><article class="card "><div class="thumb"></div><h3>Certificate title 3</h3><p>Issuer name · Year</p></article><article class="card "><div class="thumb"></div><h3>Certificate title 4</h3><p>Issuer name · Year</p></article><article class="card "><div class="thumb"></div><h3>Certificate title 5</h3><p>Issuer name · Year</p></article><article class="card "><div class="thumb"></div><h3>Certificate title 6</h3><p>Issuer name · Year</p></article></div></section></div>
+<div id="tools"><section class="page-head"><div class="wrap"><h1>Tools</h1><p>Software and platforms you work with.</p></div></section><section class="section"><div class="wrap grid"><article class="card "><div class="thumb"></div><h3>Tool 1</h3><p>One line on how you use it.</p></article><article class="card "><div class="thumb"></div><h3>Tool 2</h3><p>One line on how you use it.</p></article><article class="card "><div class="thumb"></div><h3>Tool 3</h3><p>One line on how you use it.</p></article><article class="card "><div class="thumb"></div><h3>Tool 4</h3><p>One line on how you use it.</p></article><article class="card "><div class="thumb"></div><h3>Tool 5</h3><p>One line on how you use it.</p></article><article class="card "><div class="thumb"></div><h3>Tool 6</h3><p>One line on how you use it.</p></article></div></section></div>
+<div id="projects"><section class="page-head"><div class="wrap"><h1>Projects</h1><p>Selected work you are proud of.</p></div></section><section class="section"><div class="wrap grid"><article class="card "><div class="thumb"></div><h3>Project 1</h3><p>Short description of the goal, your role and the result.</p></article><article class="card "><div class="thumb"></div><h3>Project 2</h3><p>Short description of the goal, your role and the result.</p></article><article class="card "><div class="thumb"></div><h3>Project 3</h3><p>Short description of the goal, your role and the result.</p></article><article class="card "><div class="thumb"></div><h3>Project 4</h3><p>Short description of the goal, your role and the result.</p></article><article class="card "><div class="thumb"></div><h3>Project 5</h3><p>Short description of the goal, your role and the result.</p></article><article class="card "><div class="thumb"></div><h3>Project 6</h3><p>Short description of the goal, your role and the result.</p></article></div></section></div>
+<div id="contact"><section class="page-head"><div class="wrap"><h1>Contact</h1><p>Tell me about your project.</p></div></section><section class="section"><div class="wrap two"><div><h2>Let's work together</h2><p>City, Country<br>+00 000 000 0000<br><a href="mailto:you@example.com">you@example.com</a></p></div>
+<form id="contact-form" novalidate><label>Name<input name="name" required></label><label>Email<input name="email" type="email" required></label><label>Message<textarea name="message" rows="5" required></textarea></label><button class="btn" type="submit">Send Message</button><p id="form-note" class="note" role="status"></p></form></div></section></div></main>
 <footer class="site-footer"><div class="wrap foot">
-<div><a class="logo" href="index.html">YN<span>.</span></a><p>Short tagline about you and what you do.</p></div>
-<div><h4>Quick Links</h4><nav class="flinks"><a href="index.html">Home</a><a href="about.html">About Me</a><a href="certificates.html">Certificates</a><a href="services.html">Tools</a><a href="project.html">Projects</a><a href="contact.html">Contact</a></nav></div>
+<div><a class="logo" href="#home">YN<span>.</span></a><p>Short tagline about you and what you do.</p></div>
+<div><h4>Quick Links</h4><nav class="flinks"><a href="#home">Home</a><a href="#about">About Me</a><a href="#certificates">Certificates</a><a href="#tools">Tools</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav></div>
 <div><h4>Get in Touch</h4><p>City, Country<br>+00 000 000 0000<br>you@example.com</p>
 <p class="social"><a href="#">Facebook</a> <a href="#">LinkedIn</a> <a href="#">Instagram</a></p></div>
 </div><p class="copy">&copy; <span id="year"></span> All Rights Reserved.</p></footer>

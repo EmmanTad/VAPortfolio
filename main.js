@@ -35,4 +35,18 @@
       '&body=' + encodeURIComponent(f.message.value + '\n\n' + f.email.value);
     note.textContent = 'Opening your email app…';
   });
+
+  // One-page menu: close on tap, highlight the section in view
+  var links = [].slice.call(document.querySelectorAll('.nav a[href^="#"]'));
+  if (links.length) {
+    nav.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') { nav.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); }
+    });
+    var secs = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+    window.addEventListener('scroll', function () {
+      var cur = 0;
+      secs.forEach(function (s, i) { if (s && s.getBoundingClientRect().top <= window.innerHeight * 0.35) cur = i; });
+      links.forEach(function (a, i) { a.classList.toggle('active', i === cur); });
+    }, { passive: true });
+  }
 })();
